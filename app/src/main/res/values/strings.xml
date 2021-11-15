@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CS394_Project1</string>
+    <string name="person1">Nurettin Burak Altıntaş</string>
+    <string name="person2">Kaan Kara</string>
+    <string name="person3">Doğa Yılmaz</string>
+    <string name="person4">Sait Can Ozcan</string>
+    <string name="person5">Goksel Can Onal</string>
+    <string name="person6">Ahmet Yildirim</string>
 </resources>
