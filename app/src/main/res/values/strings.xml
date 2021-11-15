@@ -6,4 +6,6 @@
     <string name="person4">Sait Can Ozcan</string>
     <string name="person5">Goksel Can Onal</string>
     <string name="person6">Ahmet Yildirim</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

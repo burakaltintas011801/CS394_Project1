@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/nrttn/Documents/GitHub/CS394_Project1/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/nrttn/Documents/GitHub/CS394_Project1/app/src/main/res/layout/fragment_title.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/nrttn/Documents/GitHub/CS394_Project1/app/src/main/res/layout/interested1.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/nrttn/Documents/GitHub/CS394_Project1/app/src/main/res/layout/interested_people.xml" value="0.31881371640407785" />
+        <entry key="..\:/Users/nrttn/Documents/GitHub/CS394_Project1/app/src/main/res/layout/list_person.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/nrttn/Documents/GitHub/CS394_Project1/app/src/main/res/layout/list_persons.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

@@ -2,7 +2,6 @@ package com.example.cs394_project1
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.cs394_project1.data.Datasource
 import com.example.cs394_project1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +13,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.textview.text = Datasource().loadPersons().size.toString()
+       /* val myDataset = Datasource().loadPersons()
+        val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
+        recyclerView.adapter = PersonAdapter(this, myDataset)
+        recyclerView.setHasFixedSize(true)*/
+
 
     }
 }
