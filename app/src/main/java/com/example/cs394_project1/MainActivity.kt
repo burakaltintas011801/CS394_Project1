@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
+
         //person list
         val person_list: ArrayList<Person> = Datasource().loadPersons()
 
