@@ -1,5 +1,9 @@
 package com.example.cs394_project1.model
 
-data class Person(val stringResourceId: Int) {
+import java.io.Serializable
+
+data class Person(val name:String,val university:String, val image:Int ):Serializable {
+
+
 
 }

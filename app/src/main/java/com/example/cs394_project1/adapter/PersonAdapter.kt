@@ -1,39 +1,41 @@
 package com.example.cs394_project1.adapter
 
-
-import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cs394_project1.R
+import com.example.cs394_project1.DetailsActivity
+import com.example.cs394_project1.databinding.RecyclerRowBinding
 import com.example.cs394_project1.model.Person
 
-class PersonAdapter(private val context: Context, private val dataset: List<Person>):RecyclerView.Adapter<PersonAdapter.ItemViewHolder>() {
+class PersonAdapter(val personList: ArrayList<Person>): RecyclerView.Adapter<PersonAdapter.PersonHolder>() {
 
+    class PersonHolder(val binding:RecyclerRowBinding):RecyclerView.ViewHolder(binding.root)
+    {
 
-
-    class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-        val textView: TextView = view.findViewById(R.id.person_title)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-
-        val adapterLayout = LayoutInflater.from(parent.context).inflate(R.layout.list_person, parent, false)
-        return ItemViewHolder(adapterLayout)
 
     }
 
-    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonHolder {
+        val binding = RecyclerRowBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        return PersonHolder(binding)
+    }
 
-        val item = dataset[position]
-        holder.textView.text =  context.resources.getString(item.stringResourceId)
+    override fun onBindViewHolder(holder: PersonHolder, position: Int) {
+        holder.binding.recyclerViewTextView.text =personList.get(position).name
+
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context,DetailsActivity::class.java)
+            intent.putExtra("Person",personList.get(position))
+            holder.itemView.context.startActivity(intent)
+        }
 
     }
 
     override fun getItemCount(): Int {
-        return dataset.size
+        return personList.size
     }
+
 
 }
