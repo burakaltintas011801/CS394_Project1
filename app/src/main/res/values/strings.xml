@@ -8,4 +8,8 @@
     <string name="person6">Ahmet Yildirim</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_first_crush">Enter your first crush</string>
+    <string name="hint_second_crush">Enter your second crush</string>
+    <string name="hint_third_crush">Enter your third crush</string>
+    <string name="button_text_save_crushes">Save My Crushes</string>
 </resources>
