@@ -1,13 +1,14 @@
-package com.example.cs394_project1
+package com.example.cs394_project1.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cs394_project1.databinding.ActivityDetailsBinding
+
 import com.example.cs394_project1.model.Person
 
 class DetailsActivity : AppCompatActivity() {
 
-    private lateinit var binding :ActivityDetailsBinding
+    private lateinit var binding : ActivityDetailsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -5,16 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
+    <ImageView
+        android:id="@+id/crushPicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/kaan"></ImageView>
+
     <TextView
         android:id="@+id/recyclerViewTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Test"
-        android:textColor="#19BD1F"
-        android:textSize="20sp"
-        />
-
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:text="Hello"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toEndOf="@+id/chatPictureIV"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
 
 </LinearLayout>

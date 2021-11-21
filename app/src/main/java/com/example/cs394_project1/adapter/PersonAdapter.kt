@@ -4,7 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cs394_project1.DetailsActivity
+import com.example.cs394_project1.activity.DetailsActivity
 import com.example.cs394_project1.databinding.RecyclerRowBinding
 import com.example.cs394_project1.model.Person
 
@@ -23,10 +23,11 @@ class PersonAdapter(val personList: ArrayList<Person>): RecyclerView.Adapter<Per
 
     override fun onBindViewHolder(holder: PersonHolder, position: Int) {
         holder.binding.recyclerViewTextView.text =personList.get(position).name
+        holder.binding.crushPicture.setImageResource(personList.get(position).image)
 
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context,DetailsActivity::class.java)
+            val intent = Intent(holder.itemView.context, DetailsActivity::class.java)
             intent.putExtra("Person",personList.get(position))
             holder.itemView.context.startActivity(intent)
         }
